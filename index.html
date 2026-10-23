@@ -34,6 +34,9 @@ section{margin:0 0 64px}h2{font-size:26px;margin:0 0 20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
 .card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:15px}
 .ico{font-size:26px;margin-bottom:8px}
+a.proj{text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s}
+a.proj:hover{border-color:var(--accent);transform:translateY(-2px)}
+.tag{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--accent)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--chip);color:var(--accent);padding:6px 12px;border-radius:999px;font-size:14px;font-weight:500}
 .tl{border-left:2px solid var(--line);padding-left:22px}
 .job{position:relative;margin-bottom:30px}
@@ -46,7 +49,7 @@ footer{border-top:1px solid var(--line);padding:28px 16px;text-align:center;colo
 </style>
 </head>
 <body>
-<nav><div class="in"><b>Afra Momin</b><a href="#services">What I do</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+<nav><div class="in"><b>Afra Momin</b><a href="#services">What I do</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav>
 <main>
   <header class="hero">
     <small>AI Data Quality Specialist</small>
@@ -75,6 +78,18 @@ footer{border-top:1px solid var(--line);padding:28px 16px;text-align:center;colo
       <div class="card"><div class="ico">🏷️</div><h3>Data annotation</h3><p>Label text, image and audio data accurately and consistently for machine-learning datasets.</p></div>
       <div class="card"><div class="ico">✅</div><h3>Quality assurance</h3><p>Audit others' work, find error patterns, and train and give feedback to keep a team's output consistent.</p></div>
       <div class="card"><div class="ico">📊</div><h3>Research & data validation</h3><p>Secondary research, record verification and data cleanup in Excel and SQL.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <a class="card proj" href="https://github.com/affo-momin/annotation-agreement"><div class="ico">🏷️</div><h3>Annotation Agreement Toolkit</h3><p>Cohen's and Fleiss' kappa, percent agreement, and a list of items to adjudicate from any label export.</p><span class="tag">Python</span></a>
+      <a class="card proj" href="https://github.com/affo-momin/llm-eval-scorer"><div class="ico">🤖</div><h3>LLM Eval Scorer</h3><p>Weighted rubric scoring for chatbot responses, rater-disagreement flags and side-by-side win rates.</p><span class="tag">Python</span></a>
+      <a class="card proj" href="https://github.com/affo-momin/search-relevance-metrics"><div class="ico">🔍</div><h3>Search Relevance Metrics</h3><p>Turns human relevance ratings into NDCG@k, Precision@k and MRR, and flags results to re-check.</p><span class="tag">Python</span></a>
+      <a class="card proj" href="https://github.com/affo-momin/data-quality-checker"><div class="ico">✅</div><h3>CSV Data Quality Checker</h3><p>Rule-based validation of required fields, duplicates, formats, allowed values and ranges.</p><span class="tag">Python · JSON</span></a>
+      <a class="card proj" href="https://github.com/affo-momin/sql-data-validation"><div class="ico">🗄️</div><h3>SQL Data Validation</h3><p>SQL checks for missing labels, orphan rows, impossible timestamps and speed outliers, with a PASS/FAIL report.</p><span class="tag">SQL · SQLite</span></a>
+      <a class="card proj" href="https://github.com/affo-momin/prompt-engineering-playbook"><div class="ico">🧩</div><h3>Prompt Engineering Playbook</h3><p>Eight prompt patterns, before/after rewrites and an LLM response evaluation checklist.</p><span class="tag">Guide</span></a>
     </div>
   </section>
 
